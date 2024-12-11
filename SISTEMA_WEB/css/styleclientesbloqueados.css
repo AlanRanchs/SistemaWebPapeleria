@@ -1,0 +1,259 @@
+
+body {
+    margin-top: 180px; /* Ajusta este valor según sea necesario */
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff; /* Cambia el color a azul llamativo */
+    font-size: 2em; /* Aumenta el tamaño del texto */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Agrega sombra al texto */
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%; /* Aumenta el ancho de la tabla */
+    margin: 20px auto; /* Centra la tabla */
+    background-color: #f8f9fa; /* Cambia el color de fondo */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.sub-banner .menu-item {
+    padding: 12px 20px; /* Aumenta el espacio interno */
+    border-radius: 20px; /* Hace los bordes más redondeados */
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+    border: 2px solid #007bff; /* Añade un borde sólido */
+    margin-right: 10px; /* Ajusta el margen entre los botones */
+}
+
+.sub-banner {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 70px; /* Ajusta la distancia desde la parte superior de la ventana */
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    font-size: 0.8em;
+}
+
+.sub-banner ul {
+    display: flex; /* Cambia el contenedor a un flexbox */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-banner li:last-child .menu-item {
+    margin-right: 0; /* Ajusta el margen entre el último botón y el borde derecho */
+}
+
+.sub-banner .menu-item:hover {
+    background-color: #007bff; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px; /* Espacio entre el input y el botón */
+    margin-bottom: 0; /* Ajusta el margen inferior */
+}
+
+.search-button {
+    padding: 10px 20px; /* Aumenta el espacio interno */
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+    background-color: #007bff; /* Cambia el color de fondo */
+    border: 2px solid #0056b3; /* Cambia el color del borde */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    margin-right: 20px; /* Espacio entre el input y el botón */
+}
+  
+.search-button:hover {
+    background-color: #0056b3; /* Mantener el color de fondo al pasar el mouse */
+}
+
+.modal {
+    display: none; /* Oculta la ventana emergente por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff; /* Cambia el color de fondo */
+    margin: 10% auto; /* Ajusta el margen superior e inferior para centrar */
+    padding: 20px;
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #007bff; /* Color azul llamativo */
+    font-size: 1.5em; /* Tamaño del texto */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Sombra del texto */
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"],
+.modal-content textarea {
+    width: calc(100% - 40px); /* Ancho del input */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modal-content textarea {
+    height: 100px; /* Altura del textarea */
+}
+
+.modal-content input[type="submit"] {
+    background-color: #007bff; /* Color de fondo */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.modal-content input[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+.success-message {
+    margin: 10px 0;
+    color: #28a745; /* Verde para indicar éxito */
+    background-color: #d4edda; /* Fondo verde claro */
+    border: 1px solid #c3e6cb; /* Borde verde claro */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: #dc3545; /* Rojo para indicar error */
+    background-color: #f8d7da; /* Fondo rojo claro */
+    border: 1px solid #f5c6cb; /* Borde rojo claro */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.delete-button {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.delete-button:hover {
+    background-color: #d32f2f; /* Darker red */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.edit-button {
+    background-color: #007bff; /* Azul llamativo */
+    border: 2px solid #0056b3; /* Borde sólido */
+    color: white; /* Texto en blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación de texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 4px; /* Bordes redondeados */
+    transition-duration: 0.4s; /* Duración de la transición */
+    cursor: pointer; /* Cursor al pasar el mouse */
+    margin-right: 4px; /* Margen derecho */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra */
+}
+
+.edit-button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra más pronunciada */
+}
+
+.clientes-bloqueados-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    max-width: 200px; /* optional: limit the width of the button */
+}
+.clientes-bloqueados-btn:hover {
+    background-color: #0056b3;
+}

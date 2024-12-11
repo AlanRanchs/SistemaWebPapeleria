@@ -1,0 +1,7 @@
+Productos Agregados, Productos Eliminados, Productos Actualizados
+,,
+
+ID Venta,ID Producto,Nombre Producto,Cantidad Producto,ID Cliente,Nombre Cliente,Fecha Compra,Total Pago
+1,1,Marcador Sharpie,1,48,Ivan Castillo,2024-05-31,75.00
+2,2,Lápices de Grafito,1,48,Ivan Castillo,2024-05-31,48.00
+3,6,Prismacolor Junior  ,1,48,Ivan Castillo,2024-05-31,70.00

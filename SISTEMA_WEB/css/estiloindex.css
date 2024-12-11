@@ -1,0 +1,12 @@
+main > .container {
+    padding: 30px 0;
+}
+
+.btn{
+    padding: 10px 20px; /* Aumenta el espacio interno */
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+    background-color: #007bff; /* Cambia el color de fondo */
+    border: 2px solid #0056b3; /* Cambia el color del borde */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    margin-right: 20px; /* Espacio entre el input y el botón */
+}
